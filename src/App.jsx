@@ -8,6 +8,7 @@ import Certificates from "./section/Certificates.jsx";
 import Contact from "./section/Contact.jsx";
 import Footer from "./section/Footer.jsx";
 import ParticlesBackground from "./components/ParticlesBackground.jsx";
+import CustomCursor from "./components/CustomCursor.jsx";
 
 
 export default function App(){
@@ -15,6 +16,7 @@ export default function App(){
         <div className="relative gradient text-white">
 
             <ParticlesBackground />
+            <CustomCursor />
 
             <Navbar />
             <Home />
