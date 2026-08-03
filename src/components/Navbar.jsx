@@ -1,6 +1,6 @@
 import OverlayMenu from "./OverlayMenu.jsx";
 import {useEffect, useRef, useState} from "react";
-import logo1 from "../assets/logo1.jpg"
+import logo1 from "../../public/logo1.jpg"
 import { FiMenu } from "react-icons/fi";
 
 export default function Navbar() {
