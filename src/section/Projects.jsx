@@ -221,7 +221,7 @@
                {/*//view all projects*/}
 
                 <div
-                    className={`absolute left-0 right-0 flex justify-center lg:justify-self-end px-3 ${
+                    className={`absolute left-0 right-0 flex justify-center ${
                         isMobile ? "bottom-4" : "bottom-6"
                     }`}
                 >
