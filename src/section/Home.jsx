@@ -23,7 +23,7 @@ const glowVariants = {
 }
 
 export default function Home(){
-    const roles = useMemo(() => ["Sophomore E&CE Student" , "Web Developer"  , "MERN Stack Developer" , "Software Developer" , "AI/ML Engineer in Progress"], []);
+    const roles = useMemo(() => ["Sophomore E&CE Student" , "Web Developer"  , "MERN Stack Developer" , "Software Developer" , "Data Analyst" , "AI/ML Engineer in Progress"], []);
 
     const [index, setIndex] = React.useState(0)
     const [subIndex, setSubIndex] = React.useState(0)
