@@ -32,7 +32,7 @@
         return isMobile;
     };
 
-    export default function Projects() {
+    export default function Projects({onViewAllProjects}) {
         const isMobile = useIsMobile();
         const sceneRef = useRef(null);
 
@@ -225,8 +225,8 @@
                         isMobile ? "bottom-4" : "bottom-6"
                     }`}
                 >
-                    <motion.a
-                        href="/projects"
+                    <motion.button
+                        onClick={onViewAllProjects}
                         initial={{
                             opacity: 0,
                             x: isMobile ? 0 : 60,
@@ -249,7 +249,7 @@
                         <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
             ↗
         </span>
-                    </motion.a>
+                    </motion.button>
 
 
                 </div>
