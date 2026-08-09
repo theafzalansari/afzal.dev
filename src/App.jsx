@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar.jsx";
 import Home from "./section/Home.jsx";
@@ -15,11 +15,20 @@ import AllProjects from "./section/AllProjects.jsx";
 export default function App() {
     const [showAllProjects, setShowAllProjects] = useState(false);
 
+    useEffect(() => {
+        if (showAllProjects) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [showAllProjects]);
+
     return (
         <div>
-
-            {/* <ParticlesBackground /> */}
-
             <CustomCursor />
 
             <Navbar />
@@ -41,7 +50,6 @@ export default function App() {
                 isOpen={showAllProjects}
                 onClose={() => setShowAllProjects(false)}
             />
-
         </div>
     );
 }
