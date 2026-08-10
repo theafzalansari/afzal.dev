@@ -3,36 +3,78 @@ import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
+import img4 from "../assets/img4.png";
+import img5 from "../assets/img5.png";
+import img6 from "../assets/img6.png";
+import img7 from "../assets/img7.png";
 
 export default function AllProjects({ isOpen, onClose }) {
     const projects = [
         {
             title: "ResumeCraft AI",
             description:
-                "An AI-powered resume platform designed to help users create and improve their resumes.",
+                "Built an AI-powered resume builder that helps users create ATS-friendly, professional resumes using customizable templates and intelligent AI-generated content suggestions. The application focuses on delivering a modern user experience with responsive design and real-time editing capabilities.",
             image: img1,
-            tech: ["React", "AI", "JavaScript"],
+            tech: ["React", "AI Integration", "JavaScript", "TailwindCSS", "Respnsive Web Design", "Git", "GitHub", "Vercel Deployment", "Strapi Backend"],
             live: "https://resume-craft-ai-eta.vercel.app/",
-            github: "#",
+            github: "https://github.com/theafzalansari/resume-craft-ai",
         },
         {
-            title: "MovieFlix",
+            title: "MovieFlix – Movie Discovery Platform",
             description:
-                "A movie discovery web application with a modern interface for browsing and exploring movies.",
+                "Built a responsive movie discovery platform using React, Vite, Tailwind CSS, TMDB API, and Appwrite. Features include real-time movie search, trending movies, responsive UI, and API integration for dynamic content.",
             image: img2,
-            tech: ["React", "API", "JavaScript"],
+            tech: ["React", "API", "JavaScript", "TailwindCSS", "TMDB API", "Appwrite", "REST APIs", "Git", "GitHub", "Vercel Deployment"],
             live: "https://movieflix-react-app-zeta.vercel.app/",
-            github: "#",
+            github: "https://github.com/theafzalansari/movieflix-react-app",
         },
         {
-            title: "Chronos",
+            title: "Chronos – Kanban Task Manager",
             description:
-                "A task management application designed to organize tasks using a simple and intuitive workflow.",
+                "Designed and developed a Kanban-style task management application with drag-and-drop functionality, persistent local storage, and a clean responsive interface for organizing daily tasks efficiently.",
             image: img3,
-            tech: ["React", "JavaScript", "CSS"],
+            tech: ["HTML", "JavaScript", "CSS", "Drag & Drop API", "Local Storage", "Responsive Web Design", "Git", "GitHub", "Vercel Deployment"],
             live: "https://chronos-lac.vercel.app/",
-            github: "#",
+            github: "https://github.com/theafzalansari/chronos",
         },
+        {
+            title: "PPS Practice Hub",
+            description:
+                "Created an interactive Python Programming learning platform featuring 20 practice programs, progress tracking, sample outputs, study tips, and local storage support to help first-year engineering students practice programming concepts.",
+            image: img4,
+            tech: ["HTML", "JavaScript", "CSS", "Local Storage", "Responsive Web Design", "Git", "GitHub", "Vercel Deployment"],
+            live: "https://pps-practice-hub.vercel.app/",
+            github: "https://github.com/theafzalansari/pps-practice-hub",
+        },
+        {
+            title: "Profile Card",
+            description:
+                "Built a fully responsive profile card featuring dropdown menus, animated UI elements, social media integration, and modern CSS styling, then deployed it on Vercel.",
+            image: img5,
+            tech: ["HTML", "JavaScript", "CSS", "Responsive Web Design", "Git", "GitHub", "Vercel Deployment"],
+            live: "https://profile-card-taupe-rho.vercel.app/",
+            github: "https://github.com/theafzalansari/profile-card",
+        },
+        {
+            title: "Sieca – Scientific Calculator",
+            description:
+                "Developed a modern scientific calculator supporting arithmetic and trigonometric operations, calculation history, and a responsive user interface using HTML, CSS, and JavaScript.",
+            image: img6,
+            tech: ["HTML", "JavaScript", "CSS", "Responsive Web Design", "DOM Manipulation", "Git", "GitHub", "Vercel Deployment"],
+            live: "https://sieca-the-calculator.vercel.app/",
+            github: "https://github.com/theafzalansari/sieca-the-calculator",
+        },
+        {
+            title: "Amazon Homepage Clone",
+            description:
+                "Recreated the Amazon homepage interface using HTML and CSS to strengthen front-end development fundamentals, responsive layouts, and modern UI design practices.",
+            image: img7,
+            tech: ["HTML", "CSS", "Responsive Web Design", "Git", "GitHub", "Vercel Deployment"],
+            live: "https://amazon-clone-html-css-hazel.vercel.app/",
+            github: "https://github.com/theafzalansari/Amazon-clone-html-css",
+        },
+
+
     ];
 
     return (
@@ -74,7 +116,7 @@ export default function AllProjects({ isOpen, onClose }) {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6 }}
-                                className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-red-500"
                             >
                                 All Projects
                             </motion.h1>
@@ -134,7 +176,7 @@ export default function AllProjects({ isOpen, onClose }) {
                                     {/* Content */}
                                     <div className="p-6">
 
-                                        <h2 className="text-2xl font-semibold">
+                                        <h2 className="text-2xl font-semibold text-white">
                                             {project.title}
                                         </h2>
 
