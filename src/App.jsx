@@ -5,12 +5,12 @@ import Home from "./section/Home.jsx";
 import About from "./section/About.jsx";
 import Skills from "./section/Skills.jsx";
 import Projects from "./section/Projects.jsx";
-import Journey from "./section/Journey.jsx";
 import Certificates from "./section/Certificates.jsx";
 import Contact from "./section/Contact.jsx";
 import Footer from "./section/Footer.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import AllProjects from "./section/AllProjects.jsx";
+import Experience from "./section/Experience.jsx";
 
 export default function App() {
     const [showAllProjects, setShowAllProjects] = useState(false);
@@ -41,7 +41,7 @@ export default function App() {
                 onViewAllProjects={() => setShowAllProjects(true)}
             />
 
-            <Journey />
+            <Experience />
             <Certificates />
             <Contact />
             <Footer />
