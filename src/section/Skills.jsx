@@ -20,7 +20,7 @@ import { SiNumpy } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { SiPandas } from "react-icons/si";
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 
 
 
@@ -139,7 +139,7 @@ export default function Skills() {
             whileInView={{opacity: 1, y:0}}
                        transition={{duration:0.5, delay:0.1}}
             >
-                My Skills
+                My Skills<span className="text-red-500">.</span>
             </motion.h2>
 
             <motion.p className="mt-2 mb-8 text-white/90 text-base sm:text-lg z-10"
