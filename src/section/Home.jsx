@@ -93,8 +93,8 @@ export default function Home(){
                             </span>
                         </motion.div>
 
-                        <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text
-                        bg-gradient-to-r from-red-500 drop-shadow-lg "
+                        <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold  bg-clip-text
+                         text-red-500 drop-shadow-lg "
                         initial={{opacity:0, y:40}}
                         animate={{opacity:1, y:0}}
                         transition={{duration:1}}
