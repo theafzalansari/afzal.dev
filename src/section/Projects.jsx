@@ -2,7 +2,7 @@
     import img1 from "../assets/img1.png";
     import img2 from "../assets/img2.png";
     import img3 from "../assets/img3.png";
-    import photo1 from "../assets/photo1.jpg"
+    import photo1 from "../assets/photo1.JPG"
     import photo2 from "../assets/photo2.jpg";
     import photo3 from "../assets/photo3.jpg";
     import {
