@@ -12,6 +12,7 @@ import CustomCursor from "./components/CustomCursor.jsx";
 import AllProjects from "./section/AllProjects.jsx";
 import Experience from "./section/Experience.jsx";
 import Education from "./section/Education.jsx";
+import MusicPlayer from "./components/MusicPlayer";
 
 export default function App() {
     const [showAllProjects, setShowAllProjects] = useState(false);
@@ -33,6 +34,7 @@ export default function App() {
             <CustomCursor />
 
             <Navbar />
+            <MusicPlayer/>
 
             <Home />
             <About />
