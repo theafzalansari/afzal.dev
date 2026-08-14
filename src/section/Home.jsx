@@ -123,7 +123,7 @@ export default function Home(){
                             className="px-6 py-3 rounded-full font-medium text-lg text-white bg-red-500
                             shadow-lg hover:scale-105 transition-all"
                             >View Projects</a>
-                            <a href="/Resume.pdf"
+                            <a href="/Afzal Ansari - Resume.pdf"
                             download
                                className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all"
                             >View Resume</a>
